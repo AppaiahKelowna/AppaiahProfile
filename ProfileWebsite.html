@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="ProfileWebsite.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="Pro.js"> </script>
+    </head>
+
+    <body>
+        <main>
+            <section class="profile-container">  <!-- 1) Profile Section   -->
+                <section class="profile-container-left">
+                    <img src="https://avatars.githubusercontent.com/u/126493771?v=4&size=150" alt ="Profile Image"/>
+                    <h1>John Doe</h1>
+                    <p>Web developer and designer passionate about creating beautiful and accessible websites. Currently studying at Northeastern University.</p>
+                </section>
+                <section id="profile-container-right" class="profile-container-right">
+                    <h2>My Links</h2>
+                    <hr />
+                    <div>
+                        <a><i class="fas fa-globe"> </i>My Portfolio Website</a>
+                        <a><i class="fas fa-code"></i>Latest Project</a>
+                        <a><i class="fas fa-blog"></i>My Blog</a>
+                        <a><i class="fas fa-file-alt"></i>Resume</a>
+                        <button id="btn_addlink">Add link</button>
+                    </div>
+                </section>
+            </section>
+            <section class="connect-with-me-container"> <!-- 2) Connect With me Section   -->
+                <h2>Connect With Me</h2>
+                <hr />
+                <div>
+                    <a><i class="fab fa-github"></i></a>
+                    <a><i class="fab fa-linkedin"></i></a>
+                    <a><i class="fab fa-twitter"></i></a>
+                    <a><i class="fab fa-instagram"></i></a>
+                    <a><i class="fab fa-youtube"></i></a>
+                </div>
+            </section>
+            <section class="Contact-me-container"> <!-- 3) Contact me Section   -->
+                <h1>Contact Me</h1>
+                <hr/>
+                <form>
+                   <label for="name">Name</label>
+                   <input id="name" required/>
+                   <label for="email">Email</label>
+                   <input id="email" type="email" required/>
+                   <label for="message">Message</label>
+                   <input id="message"class="input-message" required/>
+                   <button type="submit">Send Message</button>
+                   <button >Other Button</button>
+                </form>
+            </section>
+            <section class="footer-container">
+                <label>© 2023 John Doe. All rights reserved.</label>
+            </section>
+        </main>
+    </body>
+</html>
