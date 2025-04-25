@@ -76,6 +76,13 @@ h1, h2 {
     color: var(--color-red);
 }
 
+.profile-container-left img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 3px solid red;
+}
+
 .profile-container-right {
     flex: 2;
     flex-direction: column;
