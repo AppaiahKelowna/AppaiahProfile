@@ -8,7 +8,8 @@
     --height-link-cell: 10vh;
     --width-link-cell: 50vw;
     --border-solid-balck: 1px solid black;
-    --border-radius: 18px;
+    --border-radius: 3%;
+    --border-radius-50Per: 50%;
     --shodow-black: 2px 4px 6px rgba(0, 0, 0, 0.3);
     --color-red: red;
 }
@@ -76,10 +77,10 @@ h1, h2 {
     color: var(--color-red);
 }
 
-.profile-container-left img{
+.profile-container-left img {
     width: 150px;
     height: 150px;
-    border-radius: 100px;
+    border-radius: var(--border-radius-50Per);
     border: 3px solid red;
 }
 
