@@ -5,13 +5,23 @@ document.addEventListener("DOMContentLoaded",function() {
     const rightContainer = document.getElementById("profile-container-right");
     // 3. convert Json to html
     const divLink = JSON.parse(jsonEle || []);
+
     Array.from(divLink).forEach(html => {
         const div = document.createElement("div");
         div.innerHTML = html;
         rightContainer.appendChild(div);
     })
 
-    // console.log(divLink);
+    const removeBtn = document.getElementById("remove-link");
+    removeBtn.addEventListener("click",function(e){
+        const linkWrapper = removeBtn.closest(".link-wrapper");
+        if(linkWrapper){
+            if(rightContainer.contains(linkWrapper))
+            // Array.from(divLink).reduce()
+            console.log("true consition");
+            rightContainer.removeChild(linkWrapper);
+        }
+    });
 });
 
 document.getElementById("btn_add_link").addEventListener("click",function() {
@@ -28,8 +38,4 @@ document.getElementById("btn_add_link").addEventListener("click",function() {
     localStorage.setItem("template-links", JSON.stringify(htmlEle));
 });
 
-// document.getElementById("remove-link").addEventListener("click",function(){
-//     console.log("Remove link clicked");
-
-// });
 
